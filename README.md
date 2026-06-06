@@ -30,7 +30,7 @@
 ### ■ 完成サンプルの確認
 
 ``` bash
-git switch goal/cart-system
+git switch goal/shopping
 ```
 
 このブランチは以下の用途です：
@@ -54,7 +54,7 @@ git switch -
 または明示的に：
 
 ``` bash
-git switch work
+git switch (work/chap-11|work/shopping)
 ```
 
 ------------------------------------------------------------------------
@@ -66,7 +66,7 @@ git switch work
 1.  **作業用ブランチを作る**
 
     ``` bash
-    git switch work
+    git switch -c work/chap-11 origin/goal/chap-11
     ```
     
     → プロンプトの行末が「（work）」に表示が変わっていれば成功
@@ -74,7 +74,7 @@ git switch work
 2.  **完成サンプルを確認する**
 
     ``` bash
-    git switch goal/cart-system
+    git switch goal/chap-11
     ```
 
     → 仕様と動作イメージを把握する
