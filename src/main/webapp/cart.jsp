@@ -30,7 +30,7 @@
     <td align="right">${item.quantity}</td>
     <td align="right">${item.price * item.quantity}円</td>
 <td>
-<form action="/shopping/CartServlet?action=delete" method="post">
+<form action="/dao-project/CartServlet?action=delete" method="post">
     <input type="hidden" name="item_code" value="${item.code}">
     <button>削除</button>
 </form>
@@ -40,7 +40,7 @@
 <tr><td align="right" colspan="6">総計：${cart.total}円</td></tr>
 </table>
 
-<form action="/shopping/OrderServlet?action=input_customer" method="post">
+<form action="/dao-project/OrderServlet?action=input_customer" method="post">
     <button>注文する</button>
 </form>
 </c:if>
